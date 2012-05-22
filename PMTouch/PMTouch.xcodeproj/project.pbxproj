@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		56BDA2ED156C2C250091ECEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BDA2EC156C2C250091ECEF /* Foundation.framework */; };
 		56BDA2F3156C2C250091ECEF /* PMTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BDA2F2156C2C250091ECEF /* PMTouch.m */; };
+		56BDA340156C2EFB0091ECEF /* PMTRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA33E156C2EFB0091ECEF /* PMTRequest.h */; };
+		56BDA341156C2EFB0091ECEF /* PMTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BDA33F156C2EFB0091ECEF /* PMTRequest.m */; };
+		56BDA344156C2F100091ECEF /* PMTResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA342156C2F100091ECEF /* PMTResponse.h */; };
+		56BDA345156C2F100091ECEF /* PMTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BDA343156C2F100091ECEF /* PMTResponse.m */; };
+		56BDA348156C2F230091ECEF /* PMTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA346156C2F230091ECEF /* PMTClient.h */; };
+		56BDA349156C2F230091ECEF /* PMTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BDA347156C2F230091ECEF /* PMTClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +23,12 @@
 		56BDA2F0156C2C250091ECEF /* PMTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PMTouch-Prefix.pch"; sourceTree = "<group>"; };
 		56BDA2F1156C2C250091ECEF /* PMTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMTouch.h; sourceTree = "<group>"; };
 		56BDA2F2156C2C250091ECEF /* PMTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMTouch.m; sourceTree = "<group>"; };
+		56BDA33E156C2EFB0091ECEF /* PMTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTRequest.h; sourceTree = "<group>"; };
+		56BDA33F156C2EFB0091ECEF /* PMTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTRequest.m; sourceTree = "<group>"; };
+		56BDA342156C2F100091ECEF /* PMTResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTResponse.h; sourceTree = "<group>"; };
+		56BDA343156C2F100091ECEF /* PMTResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTResponse.m; sourceTree = "<group>"; };
+		56BDA346156C2F230091ECEF /* PMTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTClient.h; sourceTree = "<group>"; };
+		56BDA347156C2F230091ECEF /* PMTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,8 @@
 		56BDA2EE156C2C250091ECEF /* PMTouch */ = {
 			isa = PBXGroup;
 			children = (
+				56BDA34D156C2FA30091ECEF /* Libraries */,
+				56BDA33B156C2EC30091ECEF /* Classes */,
 				56BDA2F1156C2C250091ECEF /* PMTouch.h */,
 				56BDA2F2156C2C250091ECEF /* PMTouch.m */,
 				56BDA2EF156C2C250091ECEF /* Supporting Files */,
@@ -74,6 +88,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		56BDA33B156C2EC30091ECEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56BDA33D156C2EDA0091ECEF /* Networking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		56BDA33D156C2EDA0091ECEF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				56BDA33E156C2EFB0091ECEF /* PMTRequest.h */,
+				56BDA33F156C2EFB0091ECEF /* PMTRequest.m */,
+				56BDA342156C2F100091ECEF /* PMTResponse.h */,
+				56BDA343156C2F100091ECEF /* PMTResponse.m */,
+				56BDA346156C2F230091ECEF /* PMTClient.h */,
+				56BDA347156C2F230091ECEF /* PMTClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		56BDA34D156C2FA30091ECEF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -81,6 +123,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BDA340156C2EFB0091ECEF /* PMTRequest.h in Headers */,
+				56BDA344156C2F100091ECEF /* PMTResponse.h in Headers */,
+				56BDA348156C2F230091ECEF /* PMTClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				56BDA2F3156C2C250091ECEF /* PMTouch.m in Sources */,
+				56BDA341156C2EFB0091ECEF /* PMTRequest.m in Sources */,
+				56BDA345156C2F100091ECEF /* PMTResponse.m in Sources */,
+				56BDA349156C2F230091ECEF /* PMTClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +273,7 @@
 				56BDA2F8156C2C250091ECEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
