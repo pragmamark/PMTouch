@@ -37,6 +37,7 @@
 		56BDA3B9156C34190091ECEF /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA367156C34190091ECEF /* ASIProgressDelegate.h */; };
 		56BDA3F8156C34AF0091ECEF /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA3F6156C34AF0091ECEF /* Reachability.h */; };
 		56BDA3F9156C34AF0091ECEF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BDA3F7156C34AF0091ECEF /* Reachability.m */; };
+		56BDA468156C3DAE0091ECEF /* PMTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA2F1156C2C250091ECEF /* PMTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -237,6 +238,7 @@
 				56BDA3B7156C34190091ECEF /* ASINetworkQueue.h in Headers */,
 				56BDA3B9156C34190091ECEF /* ASIProgressDelegate.h in Headers */,
 				56BDA3F8156C34AF0091ECEF /* Reachability.h in Headers */,
+				56BDA468156C3DAE0091ECEF /* PMTouch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +358,7 @@
 				DSTROOT = /tmp/PMTouch.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PMTouch/PMTouch-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -368,6 +371,7 @@
 				DSTROOT = /tmp/PMTouch.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PMTouch/PMTouch-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
