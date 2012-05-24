@@ -13,11 +13,15 @@
 
 @interface PMTRequest : NSObject <ASIHTTPRequestDelegate>
 {
+    NSURL                   *_requestUrl;
     ASIHTTPRequest          *_asi;
     id<PMTRequestDelegate>  _delegate;
 }
 
-@property (nonatomic, readonly) ASIHTTPRequest *asi;
+@property (nonatomic, retain) NSURL *requestUrl;
+@property (nonatomic, retain) ASIHTTPRequest *asi;
 @property (nonatomic, assign) id<PMTRequestDelegate> delegate;
+
+- (id)initWithRequestUrl:(NSURL *)requestUrl delegate:(id<PMTRequestDelegate>)delegate;
 
 @end

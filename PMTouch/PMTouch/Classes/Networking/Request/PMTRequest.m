@@ -8,19 +8,24 @@
 
 #import "PMTRequest.h"
 
-@interface PMTRequest ()
-
-@property (nonatomic) ASIHTTPRequest *asi;
-
-@end
-
 @implementation PMTRequest
 
 
 
 #pragma mark - Init Methods
 
-
+- (id)initWithRequestUrl:(NSURL *)requestUrl delegate:(id<PMTRequestDelegate>)delegate
+{
+    self = [super init];
+    
+    if (self)
+    {
+        self.requestUrl = requestUrl;
+        self.delegate = delegate;
+    }
+    
+    return self;
+}
 
 
 
@@ -29,7 +34,7 @@
 - (void)dealloc
 {
     [self setDelegate:nil];
-
+    [_requestUrl release];
     [_asi release];
     [super dealloc];
 }
@@ -57,7 +62,8 @@
 
 #pragma mark - Properties
 
-@synthesize asi      = _asi;
-@synthesize delegate = _delegate;
+@synthesize requestUrl  = _requestUrl;
+@synthesize asi         = _asi;
+@synthesize delegate    = _delegate;
 
 @end

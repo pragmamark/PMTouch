@@ -14,9 +14,17 @@
 {
     PMTRequest  *_request;
     NSString    *_contentBody;
+    NSError     *_error;
+    NSObject    *_result;
 }
 
-@property (nonatomic, retain) PMTRequest *request;
-@property (nonatomic, readonly) NSString *contentBody;
+@property (nonatomic, retain, readonly) PMTRequest *request;
+@property (nonatomic, retain, readonly) NSString *contentBody;
+@property (nonatomic, retain, readonly) NSError *error;
+@property (nonatomic, retain, readonly) NSObject *result;
+
+- (id)initWithRequest:(PMTRequest *)request;
+- (id)initWithRequest:(PMTRequest *)request result:(NSObject *)result;
+- (id)initWithRequest:(PMTRequest *)request result:(NSObject *)result error:(NSError *)error;
 
 @end
