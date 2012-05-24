@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5645402C156EE8520011BF8D /* PMTRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5645402A156EE8510011BF8D /* PMTRequestQueue.h */; };
+		5645402D156EE8520011BF8D /* PMTRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5645402B156EE8510011BF8D /* PMTRequestQueue.m */; };
+		5645402F156EE8930011BF8D /* PMTRequestQueueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5645402E156EE8930011BF8D /* PMTRequestQueueDelegate.h */; };
 		56BDA2ED156C2C250091ECEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BDA2EC156C2C250091ECEF /* Foundation.framework */; };
 		56BDA2F3156C2C250091ECEF /* PMTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BDA2F2156C2C250091ECEF /* PMTouch.m */; };
 		56BDA3A6156C34190091ECEF /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BDA354156C34190091ECEF /* ASIAuthenticationDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5645402A156EE8510011BF8D /* PMTRequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTRequestQueue.h; sourceTree = "<group>"; };
+		5645402B156EE8510011BF8D /* PMTRequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTRequestQueue.m; sourceTree = "<group>"; };
+		5645402E156EE8930011BF8D /* PMTRequestQueueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTRequestQueueDelegate.h; sourceTree = "<group>"; };
 		56BDA2E9156C2C250091ECEF /* libPMTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPMTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BDA2EC156C2C250091ECEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		56BDA2F0156C2C250091ECEF /* PMTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PMTouch-Prefix.pch"; sourceTree = "<group>"; };
@@ -220,6 +226,9 @@
 				56BDA487156C46B90091ECEF /* PMTRequest.h */,
 				56BDA488156C46B90091ECEF /* PMTRequest.m */,
 				56BDA489156C46B90091ECEF /* PMTRequestDelegate.h */,
+				5645402A156EE8510011BF8D /* PMTRequestQueue.h */,
+				5645402B156EE8510011BF8D /* PMTRequestQueue.m */,
+				5645402E156EE8930011BF8D /* PMTRequestQueueDelegate.h */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -267,6 +276,8 @@
 				56BDA48C156C46B90091ECEF /* PMTRequestDelegate.h in Headers */,
 				56BDA491156C46FE0091ECEF /* PMTClient.h in Headers */,
 				56BDA495156C47040091ECEF /* PMTResponse.h in Headers */,
+				5645402C156EE8520011BF8D /* PMTRequestQueue.h in Headers */,
+				5645402F156EE8930011BF8D /* PMTRequestQueueDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +345,7 @@
 				56BDA48B156C46B90091ECEF /* PMTRequest.m in Sources */,
 				56BDA492156C46FE0091ECEF /* PMTClient.m in Sources */,
 				56BDA496156C47040091ECEF /* PMTResponse.m in Sources */,
+				5645402D156EE8520011BF8D /* PMTRequestQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
